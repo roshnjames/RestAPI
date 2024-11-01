@@ -1,8 +1,26 @@
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from rest_framework import viewsets
 from .serializers import *
 from .models import *
+from rest_framework.permissions import IsAuthenticated
+
+
+
+
+#modelviewset based class
+class personmodelview(viewsets.ModelViewSet):
+    serializer_class=people_serializer
+    queryset=people_details.objects.all()
+
+
+    # def destroy(self,request,*args,**kwargs):
+    #     obj=self.get_object()
+    #     obj.delete()
+    #     return Response({"status":"deleted"})
+
+    
 
 
 #class based api view
