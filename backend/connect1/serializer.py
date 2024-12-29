@@ -6,4 +6,4 @@ class UserDetails_serializer(serializers.ModelSerializer):
 
     class Meta:
         model=UserDetails
-        fields=['name','username','email','password']
+        fields=['name','username','profile','email','password']
