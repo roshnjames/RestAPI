@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React from 'react';
 import './User_reg.css';
 
@@ -5,20 +6,37 @@ const User_reg = () => {
 
 
 
-  const handleData=(e)=>{
+  const handleData=async(e)=>{
     e.preventDefault();
     let user={
       'name':document.getElementById('name').value,
       'username':document.getElementById('username').value,
+      'profile':document.getElementById('profile').files[0],
       'email':document.getElementById('email').value,
       'pswd1':document.getElementById('pswd1').value,
       'pswd2':document.getElementById('pswd2').value,
       }
     const verfication=validateData(user)
     if (verfication===true){
-      //api call code
+      const formdata=new FormData();
+      formdata.append("name",user.name);
+      formdata.append("username",user.username);
+      formdata.append("profile",user.profile);
+      formdata.append("email",user.email);
+      formdata.append("password",user.pswd1);
+    
+
+    try{
+    const response=await axios.post('http://127.0.0.1:8000/',formdata);
+
+    if (response.status>=200 && response.status<300){
+      alert("Registration successfull!");
     }
+  }catch(error){
+    alert("failed ...")
   }
+}
+}
 
 const validateData=(user)=>{
   if (user.pswd1!==user.pswd2){
