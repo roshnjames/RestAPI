@@ -1,0 +1,68 @@
+.User-reg-main-div{
+    background-color: rgb(57, 76, 102);
+    border:2px solid rgb(4, 4, 58);
+    border-radius:20px;
+    height:95vh;
+    width:45vw;
+    position:relative;
+    box-sizing: border-box;
+    padding:2%;
+    top:4%;
+    margin:auto;
+    display: flex;
+    flex-direction:column;
+    overflow: auto;
+}
+
+.User-reg-main-div .User-reg-form-header{
+    font-size:1.2em;
+    font-weight:bold;
+    font-family: 'Courier New', Courier, monospace;
+    color:rgb(229, 14, 14);
+    background-color: azure;
+    width:fit-content;
+    margin:0 auto;
+    border-radius: 20px;
+    padding:1% 4%;
+}
+
+.User-reg-main-div .User-reg-form{
+    position:relative;
+    margin:3% auto;
+    box-sizing: border-box;
+    border-radius:20px;
+    background-color: rgb(70, 134, 157);
+    box-shadow:10px 10px 25px;
+    height:90%;
+    width:86%;
+    overflow:auto;
+}
+
+.User-reg-main-div .User-reg-form input{
+    margin-top:5%;
+    width:80%;
+    height:4%;
+    padding:2%;
+    border:2px solid black;
+    border-radius:20px;
+    background-color: whitesmoke;
+}
+.User-reg-main-div .User-reg-form input:hover{
+    border:2.5px solid black;
+}
+.buttons-div{
+    display:flex;
+    flex-direction: row;
+}
+.buttons-div .submit-button{
+    margin:5% auto;
+    width:30%;
+    height:40px;
+    border-radius: 20px;
+    background-color: cornflowerblue;
+    border:2px solid darkblue;
+    cursor:pointer;
+}
+.buttons-div .submit-button:hover{
+    background-color:rgb(45, 107, 224) ;
+}
