@@ -5,7 +5,6 @@ import './User_reg.css';
 const User_reg = () => {
 
 
-
   const handleData=async(e)=>{
     e.preventDefault();
     let user={

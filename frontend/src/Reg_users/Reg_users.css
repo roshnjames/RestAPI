@@ -1,0 +1,29 @@
+.Reg-users-main{
+    position:fixed;
+}
+
+.Reg-users-main nav{
+    margin:3% 10% 70% 70%;
+    background-color: yellow;
+    width:fit-content;
+    height:4%;
+    color:darkblue;
+    font-family: 1.4em;
+    font-family: monospace;
+    text-decoration: none;
+}
+
+.Reg-users-main .cards-container{
+    border-radius:25px;
+    background-color: darkblue;
+    display:grid;
+    margin-top:3%;
+    position:fixed;
+    height:98%;
+    width:98%;
+    padding:1%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:1.5%;
+    overflow: auto;
+}

@@ -1,0 +1,51 @@
+.cards-main{
+    border:2px solid white;
+    border-radius: 25px;
+    display:flex;
+    flex-direction: column;
+    background-color: cyan;
+    height:450px;
+    width:350px;
+    overflow:hidden;
+    padding:1%;
+
+}
+
+.cards-main .profile{
+    border-radius:50%;
+    background-color:rgb(152, 139, 139);
+    border:1px solid rgb(0, 0, 0);
+    width:40%;
+    height:30%;
+    margin:2% 25% 0% 28%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cards-main .cards-text{
+    border:0px solid black;
+    font-size: 1.2em;
+    font-weight: bold;
+    color:darkblue;
+    flex:1;
+    overflow:hidden;
+    margin-top:1%;
+    display:flex;
+    flex-direction: column;
+}
+
+.cards-main .cards-text span i{
+    font-size:0.9em;
+    font-weight:bold;
+    font-family:monospace;
+    color:rgb(223, 53, 53)
+}
+
+.cards-main .cards-text span{
+    font-size:1em;
+    font-weight:bold;
+    font-family:monospace;
+    color:rgb(33, 83, 182);
+    
+}
